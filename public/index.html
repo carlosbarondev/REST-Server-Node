@@ -36,7 +36,7 @@
             //console.log('id_token', response.credential);
             const body = {id_token: response.credential};
             
-            fetch(`http://localhost:80/api/auth/google`, {
+            fetch(`http://localhost:${'%process.env.PORT%'}/api/auth/google`, {
             //fetch('https://restserver-node-cbar.herokuapp.com/api/auth/google', {
                 method: 'POST',
                 headers: {
