@@ -38,7 +38,7 @@
 
             const body = {id_token: response.credential};
 
-            var URLdomain = window.location.host;
+            var URLdomain = window.location.host; // Para pruebas del despliegue: Guardar en local o en heroku
             let direccion = "";
             if (URLdomain.includes("localhost")){
                 direccion = 'http://localhost:8080/api/auth/google';
